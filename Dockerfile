@@ -33,6 +33,8 @@ RUN apk --update add openjdk8-jre &&\
 
 USER nobody
 
-CMD ["/usr/bin/java", "-version"]
+ENTRYPOINT ["/usr/bin/java"]
+
+CMD ["-version"]
 
 
